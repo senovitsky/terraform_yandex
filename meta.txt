@@ -1,8 +1,6 @@
 #cloud config
 users:
-  - name: testuser
+  - name: stas
     groups: sudo
     shell: /bin/bash
     sudo: 'ALL=(ALL) NOPASSWD:ALL'
-    ssh_authorized_keys:
-      - ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBHuSMeuvVqI1Z3X0L+Ixh6Uh/h4TQLbmOKmKIQhyz/Wks9vAChBPPNSRB9YAMSDUsduKvEG9vbeJguq0C0afCE= ecdsa-key-20250717

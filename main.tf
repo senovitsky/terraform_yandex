@@ -37,7 +37,7 @@ resource "yandex_compute_instance" "virtual_machine" {
  }
 
   metadata = {
-    #"ssh-keys" = file("/home/stas/terraform_yandex/sshkey")
+    ssh-keys = "stas:${file("/home/stas/.ssh/id_ed25519.pub")}"
     #ssh_username = "testuser"
     user-data = "${file("meta.txt")}"
   }
