@@ -1,7 +1,6 @@
 #cloud config
 users:
-  - name: testuser
+  - name: stas
     groups: sudo
     shell: /bin/bash
     sudo: 'ALL=(ALL) NOPASSWD:ALL'
-    
